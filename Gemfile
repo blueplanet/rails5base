@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'slim-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap_form'
+gem 'font-awesome-rails'
 
 gem 'pg'
 
