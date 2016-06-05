@@ -16,6 +16,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap_form'
 gem 'font-awesome-rails'
 
+gem 'devise'
+
 gem 'pg'
 
 group :development, :test do
