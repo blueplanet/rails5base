@@ -2,7 +2,7 @@
   = f.error_summary
 
 <% attributes.each do |attribute| -%>
-  = f.text_field <%= attribute.name.to_sym %>
+  = f.text_field :<%= attribute.name %>
 <% end -%>
-  = f.form-group do
+  = f.form_group do
     = f.submit
