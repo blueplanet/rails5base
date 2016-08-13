@@ -1,0 +1,8 @@
+= bootstrap_form_for @<%= singular_table_name %> do |f|
+  = f.error_summary
+
+<% attributes.each do |attribute| -%>
+  = f.text_field :<%= attribute.name %>
+<% end -%>
+  = f.form_group do
+    = f.submit
