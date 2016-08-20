@@ -1,13 +1,11 @@
 h1 Listing <%= plural_table_name %>
 
-table
+table.table
   thead
     tr
 <% attributes.each do |attribute| -%>
       th <%= attribute.human_name %>
 <% end -%>
-      th
-      th
       th
 
   tbody
@@ -16,10 +14,12 @@ table
 <% attributes.each do |attribute| -%>
         td = <%= singular_table_name %>.<%= attribute.name %>
 <% end -%>
-        td = link_to 'Show', <%= singular_table_name %>
-        td = link_to 'Edit', edit_<%= singular_table_name %>_path(<%= singular_table_name %>)
-        td = link_to 'Destroy', <%= singular_table_name %>, data: { confirm: 'Are you sure?' }, method: :delete
+        td
+          .btn-group.btn-group-sm
+            = link_to 'Show', <%= singular_table_name %>, class: 'btn btn-default'
+            = link_to 'Edit', edit_<%= singular_table_name %>_path(<%= singular_table_name %>), class: 'btn btn-default'
+            = link_to 'Destroy', <%= singular_table_name %>, data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-danger'
 
 br
 
-= link_to 'New <%= human_name %>', new_<%= singular_table_name %>_path
+= link_to 'New <%= human_name %>', new_<%= singular_table_name %>_path, class: 'btn btn-info'
