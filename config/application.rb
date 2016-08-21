@@ -20,6 +20,8 @@ module Rails5base
       g.controller_specs false
       g.helper_specs false
       g.fixture false
+      g.routing_specs false
+      g.request_specs false
     end
   end
 end
