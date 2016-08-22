@@ -17,6 +17,7 @@ gem 'bootstrap_form'
 gem 'font-awesome-rails'
 
 gem 'devise'
+gem 'devise-bootstrap-views'
 
 gem 'pg'
 
