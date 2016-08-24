@@ -6,11 +6,12 @@
   - bootstrap
   - bootstrap_forms
   - font-awesome
+  - devise
 
 ## Initialize
 
 Run following script for replase name of application, and initialize database, etc.
 
 ```
-bin/setupp
+bin/setup
 ```
