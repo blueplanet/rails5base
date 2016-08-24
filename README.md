@@ -14,4 +14,5 @@ Run following script for replase name of application, and initialize database, e
 
 ```
 bin/setup
+bundle exec rake rename:to\[my_app\]
 ```
