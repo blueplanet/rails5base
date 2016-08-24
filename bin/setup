@@ -11,13 +11,6 @@ def system!(*args)
 end
 
 chdir APP_ROOT do
-  puts '== Change application name =='
-  puts 'Please input new application name:'
-  new_application_name = gets.chomp
-
-  system! "git grep -l 'module Rails5base'|xargs sed -i '' 's/Rails5base/#{new_application_name}/g'"
-  system! "git grep -l 'rails5base'|xargs sed -i '' 's/rails5base/#{new_application_name}/g'"
-
   puts '== Installing dependencies =='
   system! 'gem install bundler --conservative'
   system('bundle check') || system!('bundle install')
