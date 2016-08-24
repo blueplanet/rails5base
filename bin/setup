@@ -15,8 +15,8 @@ chdir APP_ROOT do
   puts 'Please input new application name:'
   new_application_name = gets.chomp
 
-  system! "git grep -l 'module massage'|xargs sed -i '' 's/massage/#{new_application_name}/g'"
-  system! "git grep -l 'massage'|xargs sed -i '' 's/massage/#{new_application_name}/g'"
+  system! "git grep -l 'module Rails5base'|xargs sed -i '' 's/Rails5base/#{new_application_name}/g'"
+  system! "git grep -l 'rails5base'|xargs sed -i '' 's/rails5base/#{new_application_name}/g'"
 
   puts '== Installing dependencies =='
   system! 'gem install bundler --conservative'
