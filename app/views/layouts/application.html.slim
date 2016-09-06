@@ -26,4 +26,7 @@ html
               a href='#' Default
     
     .container
-      = yield
+      == render 'flash_messages'
+      
+      .row
+        = yield

@@ -1,0 +1,7 @@
+- dic = { 'notice' => 'success', 'alert' => 'danger', 'error' => 'danger' }
+.row
+  - flash.each do |key, message|
+    div class="alert alert-dismissible alert-#{dic[key] || 'info'}" role='alert'
+      button.close type='button' data-dismiss='alert' aria-label='Close'
+        span aria-hidden="true" &times;
+      = message
