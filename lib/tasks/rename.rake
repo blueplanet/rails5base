@@ -5,5 +5,6 @@ namespace :rename do
 
     system "git grep -l 'module Rails5base' -- './*' ':!lib/tasks/rename.rake' |xargs sed -i '' 's/Rails5base/#{new_application_name.camelize}/g'"
     system "git grep -l 'rails5base' -- './*' ':!lib/tasks/rename.rake' |xargs sed -i '' 's/rails5base/#{new_application_name}/g'"
+    system "git remote rm origin"
   end
 end
