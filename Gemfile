@@ -15,6 +15,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'font-awesome-rails'
+gem 'kaminari'
 
 gem 'devise'
 gem 'devise-bootstrap-views'
