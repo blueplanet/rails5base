@@ -16,6 +16,7 @@ gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'font-awesome-rails'
 gem 'kaminari'
+gem 'active_decorator'
 
 gem 'devise'
 gem 'devise-bootstrap-views'
