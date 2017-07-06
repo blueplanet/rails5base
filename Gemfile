@@ -20,6 +20,8 @@ gem 'active_decorator'
 
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
 
 gem 'pg'
 gem 'config'
