@@ -1,9 +1,8 @@
 = bootstrap_devise_error_messages!
-.panel.panel-default.devise-bs
-  .panel-heading
-    h4
+.card.devise-bs
+  .card-header
       = t('.resend_confirmation_instructions', default: 'Resend confirmation instructions')
-  .panel-body
+  .card-body
     = form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post, role: 'form' }) do |f|
       .form-group
         = f.label :email

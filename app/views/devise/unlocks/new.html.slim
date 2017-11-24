@@ -1,9 +1,8 @@
 = bootstrap_devise_error_messages!
-.panel.panel-default.devise-bs
-  .panel-heading
-    h4
-      = t('.resend_unlock_instructions', default: 'Resend unlock instructions')
-  .panel-body
+.card.devise-bs
+  .card-header
+    = t('.resend_unlock_instructions', default: 'Resend unlock instructions')
+  .card-body
     = form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post, html: { role: "form" } }) do |f|
       .form-group
         = f.label :email
