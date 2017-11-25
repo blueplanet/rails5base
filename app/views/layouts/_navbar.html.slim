@@ -9,11 +9,13 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
           a.nav-link href="/"
             | Home
             span.sr-only (current)
-        li.nav-item
-          a.nav-link href="#"  Link
-        li.nav-item.dropdown
-          a#dropdown01.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="http://example.com"  Dropdown
-          .dropdown-menu aria-labelledby="dropdown01" 
-            a.dropdown-item href="#"  Action
-            a.dropdown-item href="#"  Another action
-            a.dropdown-item href="#"  Something else here
+      - if user_signed_in?
+        = render 'layouts/user_navbar'
+      - else
+        ul.navbar-nav
+          li.nav-item
+            = link_to t('.new_user'), new_user_registration_path, class: 'nav-link'
+          li.navbar-text
+            = t('.or')
+          li.nav-item
+            = link_to t('.login'), new_user_session_path, class: 'nav-link'

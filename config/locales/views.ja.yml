@@ -1,0 +1,9 @@
+ja:
+  layouts:
+    navbar:
+      login: ログイン
+      or: または
+      new_user: ユーザ登録
+    user_navbar:
+      profile: プロフィール編集
+      logout: ログアウト

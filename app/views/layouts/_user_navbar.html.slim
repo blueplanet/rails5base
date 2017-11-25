@@ -1,0 +1,9 @@
+ul.navbar-nav
+  .nav-item.dropdown
+    = link_to '#', id: 'user-nav-toggle', class: 'nav-link dropdown-toggle', data: { toggle: 'dropdown' } do
+      => fa_icon :user
+    .dropdown-menu aria-labelledby='user-nav-toggle'
+      = link_to t('.profile'), edit_user_registration_path, class: 'dropdown-item'
+      .dropdown-divider
+      = link_to t('.logout'), user_session_path, class: 'dropdown-item', method: :delete
+
